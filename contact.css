@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.body{
+    width: 300px;
+    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;
+  /* background: #1d2b3a; */
+}
+.inputBox{
+  position: relative;
+  width: 25opx;
+}
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2b2a2a40;
+  /* background: #1b2b3a; */
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+  font-size: 1rem;
+}
+.inputBox textarea {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #2b2a2a40;
+    /* background: #1b2b3a; */
+    border-radius: 5px;
+    outline: none;
+    color: #000000;
+    font-size: 1rem;
+}
+.inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1rem;
+  color: #747474;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.inputBox  input:valid ~ span, 
+.inputBox  input:focus ~ span{
+  color: #FFF;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #435ddb;
+  border-left: 1px solid #435ddb;
+  border-right: 1px solid #435ddb;
+  letter-spacing: 0.2em;
+}
+.inputBox:nth-child(2)  input:valid ~ span, 
+.inputBox:nth-child(2)  input:focus ~ span{
+  background: #435ddb;
+  color: #ffffff;
+  border-radius: 2px;
+}
+.inputBox  input:valid, 
+.inputBox  input:focus {
+  /* background: #00dfc4; */
+border: 1px solid #435ddb;  
+}
+
+
+
+.inputBox textarea:valid ~ span, 
+.inputBox   textarea:focus ~ span{
+  color: #fff;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #435ddb;
+  border-left: 1px solid #435ddb;
+  border-right: 1px solid #435ddb;
+  letter-spacing: 0.2em;
+}
+
+
+
+/* .inputBox:nth-child(2) textarea:valid ~ span, 
+.inputBox:nth-child(2) textarea:focus ~ span
+{
+  background: #435ddb;
+  color: #435ddb;
+  border-radius: 2px;
+} */
+
+.inputBox textarea:valid  , 
+.inputBox  textarea:focus 
+ {
+  /* background: #00dfc4; */
+border: 1px solid #435ddb;  
+}
